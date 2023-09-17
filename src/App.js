@@ -5,6 +5,7 @@ import Contact from './pages/ContactPage/Contact';
 import Home from './pages/HomePage/Home';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
 import Skills from './pages/SkillsPage/Skills';
+import WorkedWith from './components/WorkedWith/WorkedWith';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
          </div>: 
        <div> 
            <Home/>
+           <WorkedWith/>
            {/* <Skills/> */}
            {/* <ProjectPage/> */}
            {/* <Blog/> */}

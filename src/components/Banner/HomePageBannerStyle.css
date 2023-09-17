@@ -1,12 +1,13 @@
 
 .home-page-banner-container{
     width: 100vw;
-    height: 100vh ;
+    height: 140vh ;
     background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url("https://images.unsplash.com/photo-1682687982183-c2937a74257c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80") ;
     background-position: center;
     background-size: cover;
     overflow: hidden;
     transform: scaleX(-1);
+    z-index: -1;
 }
 
 .section-container{
@@ -276,7 +277,7 @@
         font-size: 30px;
     }  
     .right-side-inset-container{
-        padding: 70px 15px 0px 0px;
+        padding: 90px 15px 0px 0px;
     } 
     .inner-heading{
         height: 60px;
