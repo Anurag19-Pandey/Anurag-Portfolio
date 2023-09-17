@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.mycard{
+    min-width: 350px;
+    max-width: 350px;
+    height: 400px;
+    background-color: white;
+    margin: 0px 15px;
+    color: white;
+}
+
+.project-card-image{
+    width: 350px;
+    height: 250px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.project-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: rgb(0, 96, 205);
+    margin: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background:linear-gradient(to right, rgb(174, 226, 241), rgb(156, 180, 251));
+}
+
+.project-desc{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding:0px 20px;
+}
+
+.project-skills-used{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html{
+    color: rgba(253, 165, 0, 0.833);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.css{
+    color: rgb(0, 163, 217);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.javascript{
+    color: rgb(203, 203, 4);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.react{
+    color: rgb(0, 163, 217);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.mongodb{
+    color: rgb(0, 217, 54);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.express{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.nodejs{
+    color: rgb(64, 146, 5);
+    font-size: 24px;
+    margin: 2px;
+    padding: 2px;
+}

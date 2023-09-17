@@ -1,0 +1,13 @@
+.blog-page-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://img.freepik.com/free-vector/gradient-hexagonal-background_23-2148932756.jpg?w=900&t=st=1685629346~exp=1685629946~hmac=b2d97304d119f3c9666681c0db6eb29729291eb62a13b8346d3bdb89518a55cf");
+    background-position: center;
+    background-size: cover;
+}
+
+.blog-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

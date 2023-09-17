@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.navbar-container{
+    transform: scaleX(-1);
+    width: 100%;
+    height: 15%;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,black, rgba(0, 0, 0, 0));
+}
+
+.navbar-name-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-resume-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu-container2{
+    transform: scaleX(-1);
+    position:absolute ;
+    width:100%;
+    background-color: white;
+    display:none;
+    justify-content: center;
+    align-items:center;
+    z-index: 100;
+}
+
+.menu-icon-container{
+    display: none;
+    font-size: 24px;
+}
+
+.image-round-circle{
+        padding: 2px;   
+        background:linear-gradient(white,white) padding-box ,linear-gradient(to right, rgb(13, 187, 235), rgb(25, 66, 190)) border-box;
+        border-radius: 50em;
+        border: 4px solid transparent;
+      
+}
+
+.image-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../../images/anurag.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-name{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(91, 167, 255);
+}
+
+.navbar-name{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding :4px;
+}
+
+.menu{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-name{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-name2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.resume-btn-container{
+    border: 2px solid white;
+    width: 50%;
+    /* border-radius:30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, rgb(13, 187, 235), rgb(25, 66, 190)); */
+    background: transparent;
+}
+
+.download-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.download-icon{
+    color: white;
+    font-size: 18px;
+}
+
+.resume-btn-container{
+    height:35px ;
+    cursor: pointer;
+    background-color: black;
+}
+
+.resume-btn{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;
+    padding:10px;
+}
+
+@media screen and (max-width:1024px) {
+ 
+    .resume-btn{
+        font-size: 17px;
+    }
+    .menu-name{
+        font-size: 21px;
+    }     
+}
+
+@media screen and (max-width:900px) {
+    .navbar-resume-container{
+       display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-container{
+        justify-content: space-around;
+    }
+    .menu-icon-container{
+        display: block;
+    }
+
+    .navbar-menu-container{
+        display: none;
+    }
+
+    .navbar-menu-container2{
+        display:flex;
+        justify-content:center;
+        align-items:center ;
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width : 326px) {
+    .image-container{
+        width: 45px;
+        height: 45px;
+    }
+    .portfolio-name{
+        font-size: 25px;
+    }
+    .menu-name2{
+        font-size: 16px;
+    }
+}

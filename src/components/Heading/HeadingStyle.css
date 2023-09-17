@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width : 457px){
+    .heading{
+        
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width : 360px){
+    .heading{
+        font-size: 38px;
+    }
+}

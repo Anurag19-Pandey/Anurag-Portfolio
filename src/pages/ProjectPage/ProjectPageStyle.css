@@ -1,0 +1,6 @@
+.project-container{
+    height: 110vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("https://img.freepik.com/free-vector/modern-banner-with-abstract-low-poly-design_1048-14340.jpg?w=1060&t=st=1685601741~exp=1685602341~hmac=0a37450e2942a619662d4ee9b7acad51a294958ff14fd3fc524df68dce2875a5");
+    background-position: center;
+    background-size: cover;
+}

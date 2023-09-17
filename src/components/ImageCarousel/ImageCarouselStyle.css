@@ -1,0 +1,42 @@
+.product-carousel{
+    position: relative;
+    overflow: hidden; 
+}
+
+.product-container{
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth; 
+}
+
+.pre-btn,.next-btn{
+    border: none;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.next-btn{
+    right: 0;
+}
+
+.next-btn p ,.pre-btn p{
+    font-size: 30px;
+    background-color: rgb(14, 49, 152);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+

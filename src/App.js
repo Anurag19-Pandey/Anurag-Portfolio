@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import {useState , useEffect} from 'react' ;
 import './App.css';
+import Blog from './pages/BlogPage/Blog';
+import Contact from './pages/ContactPage/Contact';
+import Home from './pages/HomePage/Home';
+import ProjectPage from './pages/ProjectPage/ProjectPage';
+import Skills from './pages/SkillsPage/Skills';
+
 
 function App() {
+
+  const [Loading , setLoading] = useState(true) ;
+
+  useEffect(() => {
+    
+    setTimeout(() => {
+      setLoading(false) ;
+    } , 4000) ;
+
+  },[]) ;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      {Loading ? 
+         <div className="loading-container">
+            <div className="loading-image"></div>
+            <h1 className='Loading-portfolio-content'>Loading Portfolio...</h1>
+         </div>: 
+       <div> 
+           <Home/>
+           {/* <Skills/> */}
+           {/* <ProjectPage/> */}
+           {/* <Blog/> */}
+           {/* <Contact/> */}
+        </div>
+      } 
+    
     </div>
   );
 }
