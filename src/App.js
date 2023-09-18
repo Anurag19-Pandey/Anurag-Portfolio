@@ -6,6 +6,7 @@ import Home from './pages/HomePage/Home';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
 import Skills from './pages/SkillsPage/Skills';
 import WorkedWith from './components/WorkedWith/WorkedWith';
+import About from './pages/AboutPage/About';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
        <div> 
            <Home/>
            <WorkedWith/>
+           <About/>
            {/* <Skills/> */}
            {/* <ProjectPage/> */}
            {/* <Blog/> */}

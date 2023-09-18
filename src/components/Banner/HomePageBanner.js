@@ -5,8 +5,6 @@ import { Fade } from "react-awesome-reveal";
 import Navbar from '../Navbar/Navbar';
 
 const HomePageBanner = () => {
-  
-  let desc = ["Web Developer.", "Quick Learner", "Enthusiastic Coder"] ;
 
   return (
     <div className='home-page-banner-container'>
