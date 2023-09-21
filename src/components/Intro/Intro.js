@@ -1,5 +1,6 @@
 import React from 'react'
 import './IntroStyles.css' ;
+import {BsFileText} from 'react-icons/bs' ;
 
 const Intro = () => {
   return (
@@ -11,7 +12,7 @@ const Intro = () => {
           New Delhi.I am currently studying in Bharati Vidyapeeth's College of Engineering pursuing Computer Science and Engineering.
         </p>
         <button className='intro-contact-btn'>Contact</button>
-        <button className='intro-resume-btn'>Resume</button>
+        <button className='intro-resume-btn'><BsFileText/>&nbsp; Open Resume</button>
     </div>
   )
 }

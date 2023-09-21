@@ -2,12 +2,12 @@
 
 .intro-container{
     position: relative ;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
 }
 
 .underline-over-text{
     position: absolute;
-    top: 40px;
+    top: 30px;
     width: 400px;
     height: 10px;
     background-color: rgb(91, 167, 255);
@@ -30,6 +30,7 @@
 }
 
 .intro-text{
+    /* width: 90%; */
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: grey;
@@ -38,20 +39,83 @@
 }
 
 .intro-contact-btn , .intro-resume-btn{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 150px; 
     height: 40px;
     border: none;
+    font-size: 14px;
     background: linear-gradient(90deg , rgb(106, 175, 254) , rgb(91, 167, 255) , rgb(4, 121, 255));
     color: white;
     text-transform: uppercase;
-    border-top-left-radius: 10px;
     font-family: 'Poppins', sans-serif;
-    border-bottom-right-radius: 10px;
+    margin-top: 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .intro-resume-btn{
     color: black;
     background: linear-gradient(90deg , rgba(240, 240, 240, 0.785) , rgba(207, 207, 207, 0.648) , rgb(145, 145, 145));
+}
+
+@media screen and (max-width : 568px) {
+    .underline-over-text{
+        top: 20px;
+        width: 310px;
+    }
+    .hello-heading{
+        font-size: 40px;
+    }
+    .looking-heading{
+        font-size: 35px;
+    }
+    .intro-text{
+        font-size: 14px;
+    }
+    .intro-contact-btn , .intro-resume-btn{
+        font-size: 12px;
+        width: 130px; 
+        height: 40px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .underline-over-text{
+        top: 20px;
+        width: 310px;
+    }
+    .hello-heading{
+        font-size: 35px;
+    }
+    .looking-heading{
+        font-size: 30px;
+    }
+    .intro-text{
+        font-size: 12px;
+    }
+    .intro-contact-btn {
+        font-size: 12px;
+        width: 100px; 
+        height: 30px;
+    }
+    .intro-resume-btn{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width : 390px) {
+    .underline-over-text{
+        top: 15px;
+        width: 270px;
+        height: 8px;
+    }
+    .hello-heading{
+        font-size: 33px;
+    }
+    .looking-heading{
+        font-size: 23px;
+    }
 }
 
