@@ -33,7 +33,7 @@ function App() {
            <Home/>
            <WorkedWith/>
            <About/>
-           {/* <Skills/> */}
+           <Skills/>
            {/* <ProjectPage/> */}
            {/* <Blog/> */}
            {/* <Contact/> */}
