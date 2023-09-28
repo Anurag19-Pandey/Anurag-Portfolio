@@ -1,6 +1,36 @@
 .project-container{
-    height: 110vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url("https://img.freepik.com/free-vector/modern-banner-with-abstract-low-poly-design_1048-14340.jpg?w=1060&t=st=1685601741~exp=1685602341~hmac=0a37450e2942a619662d4ee9b7acad51a294958ff14fd3fc524df68dce2875a5");
-    background-position: center;
-    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.project-section-heading{
+    font-size: 55px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left : 50px;
+    margin-bottom: 0px;
+}
+
+.project-heading-horizontal-line{
+    position: absolute;
+    top: 35px;
+    width: 330px;
+    height: 10px;
+    margin-left : 50px;
+    background-color: rgb(63, 152, 253);
+    z-index: -1;
+}
+
+.project-section-oneliner{
+    font-size: 45px;
+    margin-top: 0px;
+    font-family: 'Work Sans', sans-serif;
+    margin-left : 50px;
+    color: rgb(65, 153, 255);
+}
+
+.project-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

@@ -1,44 +1,65 @@
 import React from 'react'
 import "./Skills.css";
+import {DiGit, DiMysql, DiJava , DiBootstrap , DiCss3 , DiMongodb, DiNpm , DiBitbucket , DiJavascript1 , DiNodejs, DiReact} from 'react-icons/di' ;
+import {SiExpress , SiJsonwebtokens , SiSocketdotio} from 'react-icons/si' ;
+import {MdHtml} from 'react-icons/md' ;
+import {TbBrandVscode} from 'react-icons/tb' ;
 
 const Skills = () => {
 
   return (
     <div className='skills-container'>
+      <h1 className="my-best-skill-heading">My Best Skills </h1>
       <div className='frontend-technologies'>
-        <div className='frontend-heading'>
-          <h2>Frontend Technologies & Framework</h2>
-        </div>
-        <div className='marquee-frontend-container'>
-        <marquee className="skills-section-1" direction="right" scrollamount="5" >
-        <img className='html' src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png"/>
-        <img className='html' src='https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png'/>
-        <img className='html' src="https://www.code2inspire.com/icons/jsIcon.png"/>
-        <img className='html' src='https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg'/>
-      </marquee>
+        <div className='logos'>
+          <div className='logos-slide'>
+            <MdHtml className='skills-images' style={{ color : 'orange'}}/>
+            <DiCss3 className='skills-images' style={{ color : '#299CF8' }}/>
+            <DiJavascript1 className='skills-images' style={{ color : '#F0DC55' }}/>
+            <DiReact className='skills-images' style={{ color : '#08D9FF' }}/>
+            <DiBootstrap className='skills-images' style={{ color : 'purple'}}/>
+            <MdHtml className='skills-images' style={{ color : 'orange'}}/>
+            <DiCss3 className='skills-images' style={{ color : '#299CF8' }}/>
+            <DiJavascript1 className='skills-images' style={{ color : '#F0DC55' }}/>
+            <DiReact className='skills-images' style={{ color : '#08D9FF' }}/>
+            <DiBootstrap className='skills-images' style={{ color : 'purple'}}/>
+          </div>
         </div>
       </div>
       <div className='backend-technologies'>
-        <div className='marquee-backend-container'>
-          <marquee className="skills-section-1" direction="left" scrollamount="5" >
-            <img className='html' src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"/>
-            <img className='html' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png'/>
-            <img className='html' src="https://geekflare.com/wp-content/uploads/2023/01/expressjs.png"/>
-            <img className='html' src='https://1000logos.net/wp-content/uploads/2020/08/MySQL-Logo.png'/>
-            <img className='html' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png'/>
-          </marquee>
+      <div className='logos'>
+          <div className='logos-slide-2'>
+            <DiJava className='skills-images' style={{ color : '#F89B24'}}/>
+            <DiNodejs className='skills-images' style={{ color : '#87CF30'}}/>
+            <SiExpress className='skills-images'/>
+            <DiMongodb className='skills-images' style={{ color : '#47A340'}}/>
+            <DiMysql className='skills-images' style={{ color : '#779BB3'}}/>
+            <DiJava className='skills-images' style={{ color : '#F89B24'}}/>
+            <DiNodejs className='skills-images' style={{ color : '#87CF30'}}/>
+            <SiExpress className='skills-images'/>
+            <DiMongodb className='skills-images' style={{ color : '#47A340'}}/>
+            <DiMysql className='skills-images' style={{ color : '#779BB3'}}/>
+          </div>
         </div>
-       <div className='backend-heading'>
-          <h2>Backend Technologies & Databases</h2>
+      </div>
+      <div className='other-skills'>
+      <div className='logos'>
+          <div className='logos-slide'>
+            <TbBrandVscode className='skills-images' style={{ color : '#0881CF'}}/>
+            <DiGit className='skills-images' style={{ color : '#F0563A'}}/>
+            <DiBitbucket className='skills-images' style={{ color : '#2D88FF'}}/>
+            <SiSocketdotio className='skills-images' />
+            <DiNpm className='skills-images' style={{ color : '#CD3E3D'}}/>
+            <SiJsonwebtokens className='skills-images' style={{ color : '#8E28A3'}}/>
+            <TbBrandVscode className='skills-images' style={{ color : '#0881CF'}}/>
+            <DiGit className='skills-images' style={{ color : '#F0563A'}}/>
+            <DiBitbucket className='skills-images' style={{ color : '#2D88FF'}}/>
+            <SiSocketdotio className='skills-images' />
+            <DiNpm className='skills-images' style={{ color : '#CD3E3D'}}/>
+            <SiJsonwebtokens className='skills-images' style={{ color : '#8E28A3'}}/>
+          </div>
         </div>
-        </div>
-
-      {/* <marquee className="skills-section-2" width="100%" direction="right" scrollamount="5" height="30%">
-        <p>Example for HTML Marquee Tag...</p>
-      </marquee>
-      <marquee className="skills-section-3" width="100%" direction="right" scrollamount="5" height="30%">
-        <p>Example for HTML Marquee Tag...</p>
-      </marquee> */}
+      </div>
     </div>
   )
 }

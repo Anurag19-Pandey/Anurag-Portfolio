@@ -1,37 +1,114 @@
 .skills-container{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(91, 167, 255 , 0.5);
-}
-
-.frontend-technologies , .backend-technologies{
     display: flex;
-    width: 100%;
-    height: 30%;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height:fit-content;
+    background-color: rgba(162, 206, 255, 0.765);;
 }
 
-.frontend-heading , .backend-heading{
+.my-best-skill-heading{
+    font-size: 55px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.frontend-technologies, .backend-technologies, .other-skills{
+  width: 90%;
+  height: 30%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.frontend-heading{
     width: 30%;
     height: 100%;
 }
 
-.marquee-frontend-container , .marquee-backend-container{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logos{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 0px;
 }
 
-.skills-section-1, .skills-section-2 , .skills-section-3{
-    border: 2px solid red;
+.logos-slide{
+    display: inline-block;
+    animation: 7s slide infinite linear;
 }
 
-.html{
-    width: 150px;
-    height: 100%;
+.skills-images{
+    width: 100px;
+    height: 100px;
+    margin: 0 30px;
+}
+
+.logos-slide-2{
+    display: inline-block;
+    animation: 7s slide-2 infinite linear;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-30%);
+    }
+    
+}
+
+
+@keyframes slide-2 {
+    from{
+        transform: translateX(-30%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+    
+}
+
+@media screen and (max-width : 990px) {
+    .skills-container{
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (max-width : 950px) {
+    .skills-container{
+        margin-top: 250px;
+    }
+}
+
+
+@media screen and (max-width : 570px) {
+    .skills-container{
+        margin-top: 150px;
+    }
+    .my-best-skill-heading{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .skills-container{
+        margin-top: 100px;
+    }
+    .my-best-skill-heading{
+        font-size: 45px;
+    }
+    .skills-images{
+        width: 80px;
+        height: 80px;
+        margin: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width : 380px) {
+    .my-best-skill-heading{
+        font-size: 40px;
+    }
+    
 }

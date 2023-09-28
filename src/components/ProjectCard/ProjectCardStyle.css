@@ -1,93 +1,92 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
-
-.mycard{
-    min-width: 350px;
-    max-width: 350px;
-    height: 400px;
-    background-color: white;
-    margin: 0px 15px;
-    color: white;
+.mycard-container{
+    width: 300px;
+    height: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.187);
+    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.1) ;
 }
 
-.project-card-image{
-    width: 350px;
-    height: 250px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
-    background-position: center;
-    background-size: cover;
-    
-}
+.card-image-container {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    --mask:
+    radial-gradient(109.57px at 50% calc(100% - 147.50px),#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
+    radial-gradient(109.57px at 50% calc(100% + 97.50px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  }
 
-.project-name{
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    text-align: center;
-    color: rgb(0, 96, 205);
+  .card-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-background-change{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent , rgba(0, 0, 0) );
+  }
+
+  .card-content-container{
     margin: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background:linear-gradient(to right, rgb(174, 226, 241), rgb(156, 180, 251));
-}
+    width: 100%;
+    height:40% ;
+    position: relative;
+    top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.project-desc{
-    color: black;
-    font-family: 'Poppins', sans-serif;
+  .project-name {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 5px;
+  }
+
+  .project-description {
     font-size: 12px;
-    padding:0px 20px;
-}
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0px;
+    width: 90%;
+  }
 
-.project-skills-used{
+  .code-preview{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.html{
-    color: rgba(253, 165, 0, 0.833);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
+  .check-code{
+    font-size: 8px;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(128, 128, 128, 0.251);
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.css{
-    color: rgb(0, 163, 217);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
+  }
 
-.javascript{
-    color: rgb(203, 203, 4);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
+  .check-preview{
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(91, 168, 255, 0.279);
+    padding: 5px;
+    color: rgb(2, 120, 255);
+    border-radius: 5px;
+  }
 
-.react{
-    color: rgb(0, 163, 217);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
-
-.mongodb{
-    color: rgb(0, 217, 54);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
-
-.express{
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
-
-.nodejs{
-    color: rgb(64, 146, 5);
-    font-size: 24px;
-    margin: 2px;
-    padding: 2px;
-}
+  .preview-icon{
+    transform: rotate(-45deg);
+  }
