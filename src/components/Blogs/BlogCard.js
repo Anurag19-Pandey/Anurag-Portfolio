@@ -1,22 +1,22 @@
 import React from 'react';
 import './BlogCardStyle.css';
-import {BsMedium} from "react-icons/bs" ;
+import {AiOutlineRead , AiOutlineFieldTime} from "react-icons/ai" ;
 
-const BlogCard = ({bgUrl,title,desc,blogLink}) => {
+const BlogCard = (props) => {
   return (
-    <div className="blog-card-container">
-        <div className='blog-card-image' style={{backgroundImage:`url(${bgUrl})`}}></div>
-        <div className="blog-card-title-container">
-           <h3 className="blog-card-title">{title}</h3>
+    <div className={`blog-card-container ${props.class}`}>
+        <div className='blog-card-image-container'>
+            <img className='blog-card-image' src={props.imagelink}/>
+            <div className='blog-card-date-year'>
+            <p className='blog-card-date'>{props.date}</p>
+            </div>
         </div>
         <div className='blog-card-content'>
-           <p className='blog-card-desc'>{desc}...</p>
-           <a href={blogLink} target='_blank' className='link-to-blog'>
-           <div className="medium-icon">
-           <BsMedium className="blog-medium-icon"/>
-           </div>
-           <small className='read-more-text'>Read More</small>
-           </a>
+          <p className="blog-title">{props.title}</p>
+          <div className='blog-read-time-container'>
+            <a className='blog-read-link' href="https://medium.com/@anuragpandey192002/what-is-user-authentication-e8e7ac2d6865" target='_blank' ><AiOutlineRead className='blog-read-icon'/> &nbsp; Read... </a>
+            <p className='blog-time-to-read'><AiOutlineFieldTime className='blog-read-time'/> &nbsp;{props.minread} min</p>
+          </div>
         </div>
     </div>
   

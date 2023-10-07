@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
         <div className='image-background-change'></div>
       </div>
       <div className='card-content-container'>
-        <h4 className='project-name'>Project Name</h4>
+        <h4 className='project-name'>Project Name {props.cardNo}</h4>
         <p className='project-description'>Here is a nice rainbow animation as a shadow for a div content. When you hover over it the div...</p>
         <p className='code-preview'>
           <span className='check-code'><BiCodeAlt className='code-icon'/> &nbsp;code</span>&nbsp;&nbsp;

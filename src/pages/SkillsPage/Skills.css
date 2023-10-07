@@ -4,7 +4,9 @@
     flex-direction: column;
     width: 100vw;
     height:fit-content;
-    background-color: rgba(162, 206, 255, 0.765);;
+    background-image: url("https://png.pngtree.com/png-clipart/20230529/original/pngtree-blue-glossy-wave-corner-frame-element-design-png-image_9173387.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .my-best-skill-heading{
