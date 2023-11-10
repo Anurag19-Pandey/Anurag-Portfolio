@@ -9,8 +9,7 @@ const HomePageBanner = () => {
   return (
     <div className='home-page-banner-container'>
       <Navbar/>
-      <div className='section-container'>
-        <div className='right-side-inset-container'>
+        {/* <div className='right-side-inset-container'>
           <h2 className='hi-container-left-section'>Hi, I am </h2>
           <h1 className='name-left-section'>Anurag Pandey</h1>
           <div className='outer-heading'>
@@ -24,8 +23,7 @@ const HomePageBanner = () => {
             </div>
           </h1>
         </div>  
-        </div>
-      </div>
+        </div> */}
     </div>
   )
 }

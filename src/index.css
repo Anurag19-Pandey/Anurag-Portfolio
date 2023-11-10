@@ -1,5 +1,11 @@
 body{
-  overflow-x:hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: rgb(33 26 35);
 }
+
+::-webkit-scrollbar-track {
+  background: rgba(78, 50, 86, 0.502);
+}
+ 
