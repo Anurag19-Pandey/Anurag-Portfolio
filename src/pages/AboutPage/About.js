@@ -6,12 +6,15 @@ import './AboutStyles.css' ;
 const About = () => {
   return (
     <div className='about-container'>
+        <div className='aboutContainerSections'>
         <div className='about-left-section'>
             <Intro/>
         </div>
         <div className='about-right-section'>
             <Video/>
         </div>
+        </div>
+
     </div>
   )
 }

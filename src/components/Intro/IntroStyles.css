@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 
 .intro-container{
-    position: relative ;
-    /* padding: 10px 30px; */
-}
-
-.underline-over-text{
-    position: absolute;
-    top: 30px;
-    width: 400px;
-    height: 10px;
-    background-color: rgb(91, 167, 255);
-    border: none;
-    z-index: -1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;  
+   width: 100%;
+   height: 100%;
 }
 
 .hello-heading{
@@ -31,12 +25,19 @@
 }
 
 .intro-text{
-    /* width: 90%; */
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: #c3c3c3;
     margin-top: 0px;
     letter-spacing: 1px;
+}
+
+.introBtnContainer{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-contact-btn , .intro-resume-btn{

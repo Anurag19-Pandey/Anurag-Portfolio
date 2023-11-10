@@ -1,13 +1,126 @@
 
 .home-page-banner-container{
     width: 100vw;
-    height: 140vh ;
+    height: 100vh ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     /* background-image:url("https://images.unsplash.com/photo-1682687982183-c2937a74257c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80") ; */
-    background-image: url('https://images.unsplash.com/photo-1663970206579-c157cba7edda?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1687804446680-d90cf8c60713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-position: center;
     background-size: cover;
     overflow: hidden;
     z-index: -1;
+}
+
+.homeSectionContainer{
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+}
+
+.leftSectionHomePageContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightSectionHomePageContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.matrixContainer{
+    width: 90%;
+    height: 40%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
+}
+
+.projectRecord ,.locationRecord {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid white;
+}
+
+.hackathonRecord , .developerRecord{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+
+.developerRecord , .projectRecord{
+    border-bottom: 1px solid white;
+}
+
+.liveProjectCount , .hackathonCount , .locationTo , .developerRank{
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0px;
+    text-shadow: 2px 2px rgb(33 26 35);
+}
+
+.projectHomeTag , .hackathonHomeTag , .locationHomeTag , .developerHomeTag{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+.SocialHomeBtnContainer{
+    width: 100%;
+    display : flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.linkedinSocialBtn{
+    width: 45%;
+    height: 40px;
+    outline: none;
+    border: 2px solid rgb(33 26 35);;
+   
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    background-color: rgb(106, 38, 123);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.githubSocialBtn{
+    width: 45%;
+    border: 2px solid rgb(33 26 35);;
+    height: 40px;
+    outline: none;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(106, 38, 123);
+    cursor: pointer;
+}
+
+.githubSocialBtn:hover , .linkedinSocialBtn:hover{
+    box-shadow: 0px 0px 2px 2px rgb(177, 100, 177);
+    border: none;
 }
 
 .section-container{
@@ -15,80 +128,6 @@
     height: 100vh;
     display: flex;
 
-}
-
-
-.right-side-inset-container{
-    width: 100vw;
-    height: 100vh;
-    padding: 70px 100px 0px 0px;
-    position: relative;
-    /* background: linear-gradient(90deg,rgba(0,0,0, 0),black); */
-}
-
-.home-banner-inset-container{
-    width:100vw;
-    height: 100vh;
-    background-color: black;
-    transform: rotate(90deg);
-    z-index: -1;
-    overflow: hidden;
-}
-
-.outer-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px;
-}
-
-.inner-heading{
-    height: 70px;
-    line-height: 70px; 
-    font-size: 55px;
-    overflow: hidden; 
-    margin-top: 0px;
-}
-
-.inner-heading span{
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-size: 55px;
-    color: rgb(91, 167, 255);
-    animation: animation 10s ease infinite ;
-}
-
-@keyframes animation {
-    0%{
-        top:0;
-    }
-    20%{
-        top:0;
-    }
-    25%{
-        top:-70px;
-    }
-    45%{
-        top:-70px ;
-    }
-    50%{
-        top: -140px;
-    }
-    70%{
-        top: -140px;
-    }
-     75%{
-        top: -70px;
-    } 
-    85%{
-        top:-70px ;
-    }
-    95%{
-        top: 0;
-    }
-    100%{
-        top: 0;
-    }
 }
 
 .hi-container-left-section{
@@ -121,37 +160,29 @@
     .inner-heading span{
         font-size: 45px;
     }
-    @keyframes animation {
-        0%{
-            top:0;
-        }
-        20%{
-            top:0;
-        }
-        25%{
-            top:-70px;
-        }
-        45%{
-            top:-70px ;
-        }
-        50%{
-            top: -130px;
-        }
-        70%{
-            top: -130px;
-        }
-         75%{
-            top: -70px;
-        } 
-        85%{
-            top:-70px ;
-        }
-        95%{
-            top: 0;
-        }
-        100%{
-            top: 0;
-        }
+
+    .home-page-banner-container{
+        height : 140vh ;
+    }
+
+    .homeSectionContainer{
+        display: block;
+        height: 100vh;
+    }
+    .hi-container-left-section , .name-left-section{
+        text-align: center;
+    }
+
+    .leftSectionHomePageContainer{
+        width: 100%;
+    }
+
+    .rightSectionHomePageContainer{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .SocialHomeBtnContainer{
+        justify-content: center;   
     }
 }
 
@@ -183,38 +214,6 @@
     .inner-heading span{
         font-size: 35px;
     }
-    @keyframes animation {
-        0%{
-            top:0;
-        }
-        20%{
-            top:0;
-        }
-        25%{
-            top:-50px;
-        }
-        45%{
-            top:-50px ;
-        }
-        50%{
-            top: -100px;
-        }
-        70%{
-            top: -100px;
-        }
-         75%{
-            top: -50px;
-        } 
-        85%{
-            top:-50px ;
-        }
-        95%{
-            top: 0;
-        }
-        100%{
-            top: 0;
-        }
-    }
 }
 
 @media screen and (max-width : 426px){
@@ -228,38 +227,6 @@
     }
     .inner-heading span{
         font-size: 30px;
-    }
-    @keyframes animation {
-        0%{
-            top:0;
-        }
-        20%{
-            top:0;
-        }
-        25%{
-            top:-70px;
-        }
-        45%{
-            top:-70px ;
-        }
-        50%{
-            top: -130px;
-        }
-        70%{
-            top: -130px;
-        }
-         75%{
-            top: -70px;
-        } 
-        85%{
-            top:-70px ;
-        }
-        95%{
-            top: 0;
-        }
-        100%{
-            top: 0;
-        }
     }
 }
 
