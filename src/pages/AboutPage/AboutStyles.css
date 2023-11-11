@@ -16,7 +16,6 @@
 
 .about-left-section{
     width: 50%;
-   
     height: 100%;
     display: flex;
     justify-content: center;
@@ -34,7 +33,7 @@
 
 @media screen and (max-width : 768px) {
     .about-container{
-        margin-top: 240px;
+        height: 80vh;
     }
     .aboutContainerSections{
         display: block;

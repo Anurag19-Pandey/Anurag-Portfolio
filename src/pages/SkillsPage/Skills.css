@@ -156,8 +156,12 @@
     .skills-container{
         margin-top: 150px;
     }
+    .skillHeadingAndCaptionOuterCont{
+        top:-20px;
+    }
+
     .my-best-skill-heading{
-        font-size: 50px;
+        font-size: 35px;
     }
 }
 
@@ -167,7 +171,7 @@
         margin-top: 100px;
     }
     .my-best-skill-heading{
-        font-size: 45px;
+        font-size: 35px;
     }
     
 }
@@ -175,7 +179,7 @@
 
 @media screen and (max-width : 380px) {
     .my-best-skill-heading{
-        font-size: 40px;
+        font-size: 35px;
     }
     
 }

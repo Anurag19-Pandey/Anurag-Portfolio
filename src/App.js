@@ -30,7 +30,7 @@ function App() {
             <h1 className='Loading-portfolio-content'>Loading Portfolio...</h1>
          </div>: 
        <div> 
-           <Home/>
+           <Home loading={Loading}/>
            {/* <WorkedWith/> */}
            <About/>
            <Skills/>

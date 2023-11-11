@@ -2,37 +2,27 @@ import React,{useState , useEffect} from 'react'
 import "./NavbarStyle.css" ;
 import {HiDownload} from "react-icons/hi";
 import {CgMenu,CgClose} from "react-icons/cg";
+import {AiOutlineClose} from 'react-icons/ai' ;
 
 const Navbar = () => {
-    // const [scrollPosition , setScrollPosition] = useState(0) ;
 
-    // const handleScroll = () =>{ 
-    //     setScrollPosition(window.scrollY) ;
-    // }
-
-    // console.log(scrollPosition);
-
-    // useEffect(()=>{
-    //     window.addEventListener('scroll' , handleScroll) ;
-
-    //     return () =>{
-    //         window.removeEventListener('scroll' , handleScroll) ;
-    //     }
-    // },[])
     const [menuIcon,setMenuIcon] = useState("block") ;
     const [closeIcon,setCloseIcon] = useState("none") ;
     const [menu,setMenu] = useState("none") ;
 
-    const CloseIcon = ()=>{
+    const handleClose = ()=>{
         setMenuIcon("none") ;
         setCloseIcon("block") ;
         setMenu("flex") ;
+        console.log("handleClose") ;
     }
 
-    const MenuIcon = ()=>{
+    const handleMenu = ()=>{
         setMenuIcon("block") ;
         setCloseIcon("none") ;
         setMenu("none") ;
+        console.log("handleMenu") ;
+
     }
 
   return (
@@ -74,11 +64,14 @@ const Navbar = () => {
             </div>
         </div>
         <div className='menu-icon-container'>
-            <CgMenu className='menu-icon' onClick={CloseIcon} style={{display:menuIcon}}/>
-            <CgClose className="close-icon" onClick={MenuIcon} style={{display:closeIcon}}/>
+            <CgMenu className='menu-icon' onClick={handleClose} style={{display:menuIcon}}/>
+            
         </div>
     </div>
     <div className='navbar-menu-container2' style={{display:menu}}>
+    <div className='menu2 closeBtn'>
+    <AiOutlineClose className="close-icon" onClick={handleMenu} style={{color : 'white'}}/>
+    </div>
             <div className='menu2'>
                 <p className='menu-name2'>Skills</p>
             </div>

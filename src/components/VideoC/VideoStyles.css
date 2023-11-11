@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width : 568px) {
+    .video-container{
+        margin-top: 20px;
+    }
     .video-design{
         height:80%;
     }
